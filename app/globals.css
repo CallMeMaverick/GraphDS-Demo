@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-text {
+    background: linear-gradient(0deg, rgba(6,79,228,1) 0%, rgba(3,166,242,1) 48%, rgba(0,243,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
