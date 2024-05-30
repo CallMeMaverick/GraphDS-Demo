@@ -2,7 +2,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { GraphHeader } from "@/utils/graphHeader";
-import Contents from "@/components/Contents";
 
 // Define the sliding keyframes
 const sliderVariants = {
@@ -48,7 +47,6 @@ export default function Header() {
                 </motion.div>
             </div>
             <hr/>
-            <Contents />
         </>
     );
 };
