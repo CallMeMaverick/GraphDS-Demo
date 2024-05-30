@@ -206,7 +206,7 @@ export default function Manipulation() {
                     <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
                           href={"/theory"}>Theory</Link>
                     <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
-                          href={"/editor"}>Traversal</Link>
+                          href={"/editor"}>Editor</Link>
                 </div>
             </div>
         </div>
