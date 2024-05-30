@@ -26,7 +26,7 @@ export default function Header() {
                 <motion.div className={"m-20 z-10 flex flex-col gap-5"}>
                     <motion.div className={"flex gap-3"}>
                         <motion.h1 className={"text-white text-6xl"}
-                        >Let's talk about </motion.h1>
+                        >Let&apos;s talk about </motion.h1>
                         <motion.span className={"text-white font-bold text-6xl"}>Graphs</motion.span>
                     </motion.div>
 

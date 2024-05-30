@@ -100,7 +100,7 @@ export default function TheorySection() {
                     In graphs, edges can be either <span className={"custom-span-highlight"}>directed</span> or <span
                     className={"custom-span-highlight"}>undirected</span>.
                     Directed edges mean you can only move in one direction.
-                    For example, if there's a directed edge from node <span
+                    For example, if there&apos;s a directed edge from node <span
                     className={"custom-span-highlight"}>A</span> to node <span
                     className={"custom-span-highlight"}>B</span>, you can go from <span
                     className={"custom-span-highlight"}>A</span> to <span
@@ -122,7 +122,7 @@ export default function TheorySection() {
 
                 <div className={"custom-span-highlight flex justify-center items-center text-center"}>
                     <p>In binary trees, for instance, the edges were directed. Binary trees are directed graphs. You
-                        can't access a node's parent, only its children. Once you move to a child, you can't move
+                        can&apos;t access a node&apos;s parent, only its children. Once you move to a child, you can&apos;t move
                         back.</p>
                 </div>
 

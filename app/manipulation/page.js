@@ -9,17 +9,17 @@ export default function Manipulation() {
                 <p className="mb-4">
                     In linked list problems, the head of the linked list is provided. In binary tree problems, the root
                     of the tree is given. In graph problems, however, only information about the graph is provided. This
-                    information can come in various common formats, and we'll explore a few of them.
+                    information can come in various common formats, and we&apos;ll explore a few of them.
                 </p>
             </div>
 
             <div className={"w-10/12 custom-span-highlight flex flex-col justify-center items-center"}>
-                <p className={"p-4"}>It's important to understand that in linked lists and binary trees, you are given
+                <p className={"p-4"}>It&apos;s important to understand that in linked lists and binary trees, you are given
                     actual objects in memory containing data and pointers.
-                    With graphs, the graph doesn't physically exist in memory.</p>
+                    With graphs, the graph doesn&apos;t physically exist in memory.</p>
 
                 <p className={"p-4"}>
-                    Essentially, only the <span className={"font-bold text-sky-500"}>"concept"</span> of the graph
+                    Essentially, only the <span className={"font-bold text-sky-500"}>&quot;concept&quot;</span> of the graph
                     exists.
                     The input will provide some information about it,
                     and it’s your task to figure out how to represent and traverse the graph using code.
@@ -31,8 +31,8 @@ export default function Manipulation() {
                     className={"font-bold text-sky-500"}>0 to n - 1</span>.
                     The problem statement might not explicitly say that the input is a graph. Sometimes, there might be
                     a narrative, and you need to deduce that the input represents a graph. For example, <span
-                    className={"font-bold text-sky-500"}>"there are n
-                    cities labeled from 0 to n - 1"</span>. You can consider each city as a node, with each city having
+                    className={"font-bold text-sky-500"}>&quot;there are n
+                    cities labeled from 0 to n - 1&quot;</span>. You can consider each city as a node, with each city having
                     a
                     unique label.
                 </p>
@@ -57,8 +57,8 @@ export default function Manipulation() {
             <div className={"flex flex-col justify-center w-10/12"}>
                 <p>
                     In this format, the input is a 2D array where each element is in the form [x, y], indicating an edge
-                    between nodes x and y. The problem might frame these edges within a context, such as "[x, y] means
-                    there's a highway connecting city x and city y".
+                    between nodes x and y. The problem might frame these edges within a context, such as &quot;[x, y] means
+                    there`&apos;s a highway connecting city x and city y&quot;.
                 </p>
 
                 <div className={"custom-span-highlight flex flex-col justify-center items-center mt-4 mb-4"}>
@@ -68,8 +68,8 @@ export default function Manipulation() {
                 </div>
 
                 <p>
-                    So, why can't we start traversal right away? Imagine we want to begin a DFS from node 0. How do we
-                    find its neighbors? We'd have to iterate through the entire input to find all edges involving node
+                    So, why can&apos;t we start traversal right away? Imagine we want to begin a DFS from node 0. How do we
+                    find its neighbors? We&apos;d have to iterate through the entire input to find all edges involving node
                     0. Moving to a neighbor node would require another full iteration to find its neighbors, and so on.
                 </p>
                 <br/>
@@ -94,9 +94,9 @@ export default function Manipulation() {
 
                 <div className={"custom-span-highlight flex flex-col justify-center items-center mt-4 mb-4"}>
                     <p className={"p-4"}>
-                        A useful analogy: imagine you're on Facebook and want to see a list of all your friends. If
+                        A useful analogy: imagine you&apos;re on Facebook and want to see a list of all your friends. If
                         Facebook
-                        stored its graph as an array of edges, you'd need to scan through every single connection
+                        stored its graph as an array of edges, you&apos;d need to scan through every single connection
                         worldwide to
                         find your friends, which would be extremely slow given the vast number of connections. Instead,
                         by
@@ -117,7 +117,7 @@ export default function Manipulation() {
                 <p>
                     In an adjacency list, the nodes will be numbered from <span className={"custom-span-highlight"}>0 to n - 1</span>.
                     The input will be a <span className={"custom-span-highlight"}>2D integer array</span> ,
-                    let's call it graph. <span className={"custom-span-highlight"}>graph[i]</span> will
+                    let&apos;s call it graph. <span className={"custom-span-highlight"}>graph[i]</span> will
                     be a list of all the outgoing edges from the
                     𝑖<sup>th</sup> node.
                 </p>
@@ -142,7 +142,7 @@ export default function Manipulation() {
                 <p>
                     The next format is an adjacency matrix. Once again, the nodes will be numbered from <span
                     className={"custom-span-highlight"}>0 to n - 1</span> . You will be given a 2D matrix of size <span
-                    className={"custom-span-highlight"}>n x n</span>, let's call it graph. If <span
+                    className={"custom-span-highlight"}>n x n</span>, let&apos;s call it graph. If <span
                     className={"custom-span-highlight"}>graph[i][j] ==
                     1</span>, that means there is an outgoing edge from node <span
                     className={"custom-span-highlight"}>i</span> to node <span
@@ -160,7 +160,7 @@ export default function Manipulation() {
                     then add <span
                     className={"custom-span-highlight"}>j</span> to the list associated with <span
                     className={"custom-span-highlight"}>graph[i]</span>.
-                    This way, during traversal, you won't need to
+                    This way, during traversal, you won&apos;t need to
                     iterate n times at each node to find its neighbors. This method is especially useful when nodes have
                     only a few neighbors, but n is large.
                 </p>
@@ -173,13 +173,13 @@ export default function Manipulation() {
             <h1 className={"text-3xl text-sky-300 font-bold text-center self-center w-10/12"}>Last input format: matrix</h1>
             <div className={"flex flex-col justify-center w-10/12"}>
                 <p>
-                    The final format we'll discuss is more subtle but quite common.
+                    The final format we&apos;ll discuss is more subtle but quite common.
                     Here, the input is a 2D matrix, and the problem describes a scenario where each square
                     represents something, and these squares are interconnected in some way.
                     For example, <span
-                    className={"custom-span-highlight"}>"Each square of the matrix is a village.
+                    className={"custom-span-highlight"}>&quot;Each square of the matrix is a village.
                     Villages trade with their neighboring villages, which are directly above,
-                    left, right, or below them."</span>.
+                    left, right, or below them.&quot;</span>.
                 </p>
 
                 <p>
@@ -192,14 +192,14 @@ export default function Manipulation() {
                 </p>
                 <br/>
                 <p>
-                    Unlike other formats, the nodes in these graphs aren't labeled from <span
+                    Unlike other formats, the nodes in these graphs aren&apos;t labeled from <span
                     className={"custom-span-highlight"}>0 to n</span> .
                     Instead, each element in the matrix is a node, and the edges are defined by the problem description,
                     not the input.
                     In the given example, the problem description specifies that villages trade with directly adjacent
                     villages.
                     Thus, the edges are between squares within one step.
-                    You'll need to carefully analyze the problem to understand these types of graphs..
+                    You&apos;ll need to carefully analyze the problem to understand these types of graphs..
                 </p>
 
                 <div className={"flex flex-row justify-between items-center text-center mt-20"}>

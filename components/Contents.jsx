@@ -158,7 +158,7 @@ export default function Contents() {
 
             <motion.div className="flex flex-row mt-12 mb-12 gap-8">
                 {contents.map((object, index) => (
-                    <Link href={object.url}><Content key={index} object={object}/></Link>
+                    <Link key={index} href={object.url}><Content key={index} object={object}/></Link>
                 ))}
             </motion.div>
 
