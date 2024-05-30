@@ -8,7 +8,10 @@ export default function Footer() {
                     website</a>
                 <hr className={"w-96 mt-6 mb-6"}/>
                 <p>Feel free to reach out:</p>
-                <p><strong>Phone:</strong> <a
+                <p><strong>Phone (UA):</strong> <a
+                    className={"hover:text-sky-400 hover:underline hover:font-bold text-sky-300"}
+                    href="tel:+380974140303">+380 (97) 414 0303</a></p>
+                <p><strong>Phone (PL):</strong> <a
                     className={"hover:text-sky-400 hover:underline hover:font-bold text-sky-300"}
                     href="tel:+48790301804">+48 790 301 804</a></p>
                 <p><strong>Email:</strong> <a
