@@ -61,9 +61,9 @@ const contents = [
         </svg>
     },
     {
-        title: "Traversal",
-        description: "Learn ways to traverse graphs. Code examples and real-world scenarios.",
-        url: "/traversal",
+        title: "Manipulation",
+        description: "Learn how to manipulate and work with graphs. Code examples and real-world scenarios.",
+        url: "/manipulation",
         svgCode: <svg width="50px" height="50px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M22.45 28.11L17 25.38V25C17 24.7348 16.8946 24.4804 16.7071 24.2929C16.5196 24.1054 16.2652 24 16 24C15.7348 24 15.4804 24.1054 15.2929 24.2929C15.1054 24.4804 15 24.7348 15 25V25.38L9.55 28.11C9.33366 28.2402 9.17456 28.4474 9.10466 28.69C9.03477 28.9326 9.05924 29.1927 9.17317 29.4181C9.2871 29.6434 9.48206 29.8173 9.71889 29.9048C9.95573 29.9924 10.2169 29.9871 10.45 29.89L15 27.62V28C15 28.2652 15.1054 28.5196 15.2929 28.7071C15.4804 28.8946 15.7348 29 16 29C16.2652 29 16.5196 28.8946 16.7071 28.7071C16.8946 28.5196 17 28.2652 17 28V27.62L21.55 29.89C21.6883 29.964 21.8431 30.0019 22 30C22.1847 29.9994 22.3656 29.9478 22.5227 29.8507C22.6798 29.7536 22.8069 29.6149 22.89 29.45C23.0086 29.2138 23.0289 28.9403 22.9465 28.6892C22.864 28.4381 22.6855 28.2299 22.45 28.11Z"
@@ -108,7 +108,7 @@ const contents = [
     },
     {
         title: "Editor",
-        description: "Try to work with a graph through interactive window. Get a grasp of how those work",
+        description: "Try to work with a graph through interactive window. Get a grasp of how those work.",
         url: "/editor",
         svgCode: <svg width="50" height="50" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
