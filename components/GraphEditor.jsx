@@ -45,7 +45,7 @@ const GraphComponent = () => {
             .data(nodes)
             .enter().append('circle')
             .attr('class', 'node')
-            .attr('r', nodeRadius)
+            .attr('r', nodeRadius * 1.5)
             .attr('fill', '#ffffff')
             .attr('stroke', 'black')
             .attr('stroke-width', 1.5)
@@ -53,6 +53,7 @@ const GraphComponent = () => {
                 .on('start', dragstarted)
                 .on('drag', dragged)
                 .on('end', dragended));
+
 
         const text = svg.selectAll('.text')
             .data(nodes)
