@@ -170,7 +170,7 @@ export default function TheorySection() {
                     <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
                           href={"/"}>Home</Link>
                     <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
-                          href={"/traversal"}>Traversal</Link>
+                          href={"/manipulation"}>Traversal</Link>
                 </div>
             </div>
         </div>
