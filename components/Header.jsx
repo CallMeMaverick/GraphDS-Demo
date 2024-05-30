@@ -18,16 +18,35 @@ const sliderVariants = {
     }
 };
 
+const headerVariants = {
+    initial: {
+        x: "100vw", // Start position off-screen to the right
+        opacity: 0 // Start with no opacity
+    },
+    animate: {
+        x: 0, // End position at its original place
+        opacity: 1, // End with full opacity
+        transition: {
+            type: "spring", // Use a spring transition for a smooth animation
+            stiffness: 50, // Adjust the stiffness to your preference
+            damping: 10 // Adjust the damping to your preference
+        }
+    }
+};
+
 export default function Header() {
     return (
         <>
             {/* Header styling*/}
             <div className="relative overflow-hidden w-full bg-yellow-500 flex h-80 bg-custom-gradient">
                 <motion.div className={"m-20 z-10 flex flex-col gap-5"}>
-                    <div className={"flex gap-3"}>
-                        <h1 className={"text-white text-6xl"}>Let's talk about </h1>
-                        <span className={"text-white font-bold text-6xl"}>Graphs</span>
-                    </div>
+                    <motion.div className={"flex gap-3"} animate={"animate"}
+                                variants={headerVariants}
+                                initial="initial">
+                        <motion.h1 className={"text-white text-6xl"}
+                        >Let's talk about </motion.h1>
+                        <motion.span className={"text-white font-bold text-6xl"}>Graphs</motion.span>
+                    </motion.div>
 
                     <div>
                         <p className={"text-white text-3xl"}>One of the most effective ways to present data and uncover insights</p>
