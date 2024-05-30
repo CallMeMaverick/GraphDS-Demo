@@ -12,7 +12,8 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'custom-gradient': 'linear-gradient(0deg, rgba(45,194,223,1) 0%, rgba(0,80,255,1) 100%)',
-        'custom-gradient-body': 'linear-gradient(0deg, rgba(0,80,255,1) 0%, rgba(45,194,223,1) 100%)'
+        'custom-gradient-body': 'linear-gradient(0deg, rgba(0,80,255,1) 0%, rgba(45,194,223,1) 100%)',
+        'custom-footer': 'linear-gradient(0deg, rgba(0,80,255,1) 0%, rgba(45,194,223,1) 100%)'
       },
       textColor: {
         "custom-color": "linear-gradient(90deg, rgba(13,217,192,1) 0%, rgba(5,120,244,1) 100%)"
