@@ -156,6 +156,12 @@ export default function Contents() {
                 <span className={"text-sky-400 font-bold text-6xl"}>Graphs</span>
             </div>
 
+            <motion.div className="flex flex-row mt-12 mb-12 gap-8">
+                {contents.map((object, index) => (
+                    <Link href={object.url}><Content key={index} object={object}/></Link>
+                ))}
+            </motion.div>
+
             <motion.div
                 style={{width: 50 + "%"}}
                 className={"border-2 border-sky-400 rounded-2xl p-8 mt-6 hover:border-sky-600 hover:text-sky-600"}
@@ -179,12 +185,6 @@ export default function Contents() {
                     and science to education and everyday problem-solving, making it an invaluable asset in our
                     increasingly data-driven world.
                 </motion.p>
-            </motion.div>
-
-            <motion.div className="flex flex-row mt-12 gap-8">
-                     {contents.map((object, index) => (
-                         <Link href={object.url}><Content key={index} object={object}/></Link>
-                    ))}
             </motion.div>
         </div>
     )
