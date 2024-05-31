@@ -151,12 +151,12 @@ const contents = [
 export default function Contents() {
     return (
         <div className={"flex flex-col justify-center items-center mt-4"}>
-            <div className={"flex gap-3 p-3"}>
-                <h1 className={"text-sky-400 text-6xl"}>Uncover the power of</h1>
-                <span className={"text-sky-400 font-bold text-6xl"}>Graphs</span>
+            <div className={"md:flex-row justify-center items-center flex-col flex gap-3 p-3"}>
+                <h1 className={"text-3xl text-sky-400 md:text-6xl"}>Uncover the power of</h1>
+                <span className={"text-3xl text-sky-400 font-bold md:text-6xl"}>Graphs</span>
             </div>
 
-            <motion.div className="flex flex-row mt-12 mb-12 gap-8">
+            <motion.div className="flex flex-wrap justify-center items-center flex-row mt-12 mb-12 gap-8">
                 {contents.map((object, index) => (
                     <Link key={index} href={object.url}><Content key={index} object={object}/></Link>
                 ))}
@@ -164,13 +164,13 @@ export default function Contents() {
 
             <motion.div
                 style={{width: 50 + "%"}}
-                className={"border-2 border-sky-400 rounded-2xl p-8 mt-6 hover:border-sky-600 hover:text-sky-600"}
+                className={"border-2 border-sky-400 hidden md:block rounded-2xl p-8 mt-6 hover:border-sky-600 hover:text-sky-600"}
                 animate={"animate"}
                 whileHover={{scale: 1.1}}
             >
                 <motion.p
                     style={{width: 100 + "%"}}
-                    className={"text-2xl text-sky-400 hover:text-sky-600"}
+                    className={"text-[15px] md:text-2xl text-sky-400 hover:text-sky-600"}
                     animate={"animate"}
                     whileHover={{scale: 1}}
                 >

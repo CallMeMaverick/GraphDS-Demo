@@ -1,12 +1,12 @@
 export default function Footer() {
     return (
-        <footer className={"bg-custom-footer text-white p-20 text-xl mt-20 flex flex-row justify-between"}>
-            <div>
-                <p>The project was developed and is maintained by Sviatoslav Kushnierov</p>
-                <a className={"hover:text-sky-400 hover:underline hover:font-bold text-sky-300"}
+        <footer className={"bg-custom-footer text-white p-20 md:text-xl text-[15px] mt-20 flex flex-row md:justify-between justify-center"}>
+            <div className={"flex justify-center flex-col md:justify-start"}>
+                <p className={"text-center md:text-none"}>The project was developed and is maintained by Sviatoslav Kushnierov</p>
+                <a className={"hover:text-sky-400 hover:underline hover:font-bold text-sky-300 text-center md:text-start"}
                    href="https://portfoliowebsite-blush-eta.vercel.app" target={"_blank"}>Check out my portfolio
                     website</a>
-                <hr className={"w-96 mt-6 mb-6"}/>
+                <hr className={"md:w-96 mt-6 mb-6 w-72"}/>
                 <p>Feel free to reach out:</p>
                 <p><strong>Phone (UA):</strong> <a
                     className={"hover:text-sky-400 hover:underline hover:font-bold text-sky-300"}
@@ -17,9 +17,9 @@ export default function Footer() {
                 <p><strong>Email:</strong> <a
                     className={"hover:text-sky-400 hover:underline hover:font-bold text-sky-300"}
                     href="mailto:ksvyat21@gmail.com">ksvyat21@gmail.com</a></p>
-                <hr className={"w-96 mt-6 mb-6"}/>
+                <hr className={"md:w-96 mt-6 mb-6 w-72"}/>
 
-                <div className={"flex flex-row gap-4 items-center"}>
+                <div className={"flex flex-row gap-4 items-center md:justify-start justify-center"}>
                     <a href="https://github.com/CallMeMaverick" target={"_blank"}>
                         <svg className={"hover:fill-black"} fill="white" width="50px" height="50px" viewBox="0 0 32 32"
                              version="1.1"

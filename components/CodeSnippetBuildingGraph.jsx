@@ -95,7 +95,7 @@ const CodeSnippetBuildingGraph = () => {
                 {Object.keys(codeSnippets).map(lang => (
                     <button
                         key={lang}
-                        className={`px-4 py-2 rounded ${selectedLanguage === lang ? 'bg-sky-400 text-white' : 'bg-sky-200 text-gray-500'}`}
+                        className={`px-4 py-2 rounded md:text-xl text-[10px] ${selectedLanguage === lang ? 'bg-sky-400 text-white' : 'bg-sky-200 text-gray-500'}`}
                         onClick={() => setSelectedLanguage(lang)}
                     >
                         {lang.toUpperCase()}
@@ -108,7 +108,11 @@ const CodeSnippetBuildingGraph = () => {
                         {copied ? 'Copied!' : 'Copy'}
                     </button>
                 </CopyToClipboard>
-                <SyntaxHighlighter language={selectedLanguage} style={vs2015} showLineNumbers>
+                <SyntaxHighlighter
+                    language={selectedLanguage}
+                    style={vs2015}
+                    showLineNumbers
+                >
                     {codeSnippets[selectedLanguage]}
                 </SyntaxHighlighter>
             </div>

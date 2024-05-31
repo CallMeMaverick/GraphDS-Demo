@@ -24,14 +24,14 @@ export default function Header() {
             {/* Header styling*/}
             <div className="relative overflow-hidden w-full bg-yellow-500 flex h-80 bg-custom-gradient">
                 <motion.div className={"m-20 z-10 flex flex-col gap-5"}>
-                    <motion.div className={"flex gap-3"}>
-                        <motion.h1 className={"text-white text-6xl"}
+                    <motion.div className={"flex flex-col md:flex-row md:gap-3 text-center md:text-start"}>
+                        <motion.h1 className={"text-4xl md:text-6xl text-white"}
                         >Let&apos;s talk about </motion.h1>
-                        <motion.span className={"text-white font-bold text-6xl"}>Graphs</motion.span>
+                        <motion.span className={"text-4xl text-white font-bold md:text-6xl text-center md:text-start"}>Graphs</motion.span>
                     </motion.div>
 
                     <div>
-                        <p className={"text-white text-3xl"}>One of the most effective ways to present data and uncover insights</p>
+                        <p className={"text-xl md:text-2xl text-white text-center md:text-start"}>One of the most effective ways to present data and uncover insights</p>
                     </div>
                 </motion.div>
 

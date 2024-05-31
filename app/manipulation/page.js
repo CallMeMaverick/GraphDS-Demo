@@ -3,9 +3,9 @@ import Link from "next/link";
 
 export default function Manipulation() {
     return (
-        <div className={"flex flex-col justify-center items-center m-0 mt-4 w-7/12 mx-auto text-xl gap-5 leading-10"}>
-            <h1 className={"text-6xl text-sky-300 font-bold text-center"}>How are graphs presented in problems?</h1>
-            <div className={"w-10/12"}>
+        <div className={"flex flex-col justify-center items-center m-0 mt-4 w-7/12 mx-auto md:text-xl text-[15px] gap-5 md:leading-10 leading-7"}>
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold text-center"}>How are graphs presented in problems?</h1>
+            <div className={"md:w-10/12 w-[320px]"}>
                 <p className="mb-4">
                     In linked list problems, the head of the linked list is provided. In binary tree problems, the root
                     of the tree is given. In graph problems, however, only information about the graph is provided. This
@@ -13,7 +13,7 @@ export default function Manipulation() {
                 </p>
             </div>
 
-            <div className={"w-10/12 custom-span-highlight flex flex-col justify-center items-center"}>
+            <div className={"md:w-10/12 w-[320px] custom-span-highlight flex flex-col justify-center items-center"}>
                 <p className={"p-4"}>It&apos;s important to understand that in linked lists and binary trees, you are given
                     actual objects in memory containing data and pointers.
                     With graphs, the graph doesn&apos;t physically exist in memory.</p>
@@ -38,7 +38,7 @@ export default function Manipulation() {
                 </p>
             </div>
 
-            <div className={"w-10/12"}>
+            <div className={"md:w-10/12 w-[320px]"}>
                 <p>
                     With binary trees, traversal is straightforward because each node only references node.left and
                     node.right.
@@ -52,9 +52,9 @@ export default function Manipulation() {
                 </p>
             </div>
 
-            <h1 className={"text-3xl text-sky-300 font-bold text-center self-center w-10/12"}>First input format: array
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold text-center self-center md:w-10/12 w-[320px]"}>First input format: array
                 of edges</h1>
-            <div className={"flex flex-col justify-center w-10/12"}>
+            <div className={"md:text-xl flex flex-col justify-center md:w-10/12 w-[320px]"}>
                 <p>
                     In this format, the input is a 2D array where each element is in the form [x, y], indicating an edge
                     between nodes x and y. The problem might frame these edges within a context, such as &quot;[x, y] means
@@ -106,14 +106,14 @@ export default function Manipulation() {
                     </p>
                 </div>
 
-                <div className={"w-max self-center mb-4"}>
+                <div className={"md:w-max w-[370px] self-center mb-4"}>
                     <CodeSnippetBuildingGraph/>
                 </div>
             </div>
 
-            <h1 className={"text-3xl text-sky-300 font-bold text-center self-center w-10/12"}>Second input format:
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold text-center self-center md:w-10/12 w-[320px]"}>Second input format:
                 adjacency list</h1>
-            <div className={"flex flex-col justify-center w-10/12"}>
+            <div className={"flex flex-col justify-center md:w-10/12 w-[320px]"}>
                 <p>
                     In an adjacency list, the nodes will be numbered from <span className={"custom-span-highlight"}>0 to n - 1</span>.
                     The input will be a <span className={"custom-span-highlight"}>2D integer array</span> ,
@@ -136,9 +136,9 @@ export default function Manipulation() {
                 </p>
             </div>
 
-            <h1 className={"text-3xl text-sky-300 font-bold text-center self-center w-10/12"}>Third input format:
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold text-center self-center md:w-10/12 w-[320px]"}>Third input format:
                 adjacency matrix</h1>
-            <div className={"flex flex-col justify-center w-10/12"}>
+            <div className={"flex flex-col justify-center md:w-10/12 w-[320px]"}>
                 <p>
                     The next format is an adjacency matrix. Once again, the nodes will be numbered from <span
                     className={"custom-span-highlight"}>0 to n - 1</span> . You will be given a 2D matrix of size <span
@@ -170,8 +170,8 @@ export default function Manipulation() {
                 </p>
             </div>
 
-            <h1 className={"text-3xl text-sky-300 font-bold text-center self-center w-10/12"}>Last input format: matrix</h1>
-            <div className={"flex flex-col justify-center w-10/12"}>
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold text-center self-center md:w-10/12 w-[320px]"}>Last input format: matrix</h1>
+            <div className={"flex flex-col justify-center md:w-10/12 w-[320px]"}>
                 <p>
                     The final format we&apos;ll discuss is more subtle but quite common.
                     Here, the input is a 2D matrix, and the problem describes a scenario where each square
@@ -202,11 +202,19 @@ export default function Manipulation() {
                     You&apos;ll need to carefully analyze the problem to understand these types of graphs..
                 </p>
 
-                <div className={"flex flex-row justify-between items-center text-center mt-20"}>
-                    <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
-                          href={"/theory"}>Theory</Link>
-                    <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
-                          href={"/editor"}>Editor</Link>
+                <div className="flex flex-row justify-between items-center text-center mt-20">
+                    <Link
+                        className="hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl flex justify-center items-center"
+                        href="/theory"
+                    >
+                        Theory
+                    </Link>
+                    <Link
+                        className="hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl flex justify-center items-center"
+                        href="/editor"
+                    >
+                        Editor
+                    </Link>
                 </div>
             </div>
         </div>

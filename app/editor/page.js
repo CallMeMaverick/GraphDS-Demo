@@ -6,12 +6,12 @@ export default function GraphEditor() {
         <>
             <div
                 className={"flex flex-col justify-center items-center m-0 mt-4 w-7/12 mx-auto text-xl gap-5 leading-10"}>
-                <h1 className={"font-bold text-6xl text-sky-400"}>Command Interface</h1>
-                <div>
+                <h1 className={"font-bold md:text-6xl text-3xl text-sky-400 text-center"}>Command Interface</h1>
+                <div className={"md:w-10/12 w-[320px]"}>
                     <p>Below you will find documentation on how to use the editor.</p>
 
                     <div className={"mt-4"}>
-                        <h1 className={"text-sky-400 text-3xl font-bold mt-4"}>Nodes</h1>
+                        <h1 className={"text-sky-400 md:text-3xl text-xl font-bold mt-4"}>Nodes</h1>
                         <div>
                             <ul>
                                 <li>
@@ -27,7 +27,7 @@ export default function GraphEditor() {
                             </ul>
                         </div>
 
-                        <h1 className={"text-sky-400 text-3xl font-bold mt-4"}>Links</h1>
+                        <h1 className={"text-sky-400 md:text-3xl text-xl font-bold mt-4"}>Links</h1>
                         <div>
                             <ul>
                                 <li>
@@ -51,7 +51,7 @@ export default function GraphEditor() {
 
                 <GraphComponent/>
 
-                <div className={"flex flex-row justify-between items-center text-center mt-20 gap-72"}>
+                <div className={"flex flex-row justify-between items-center text-center mt-20 md:w-10/12 w-[320px]"}>
                     <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
                           href={"/manipulation"}>Manipulation</Link>
                     <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}

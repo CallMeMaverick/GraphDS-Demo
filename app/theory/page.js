@@ -10,9 +10,9 @@ export default function TheorySection() {
 
 
     return (
-        <div className={"flex flex-col justify-center items-center m-0 mt-4 w-7/12 mx-auto text-xl gap-5 leading-10"}>
-            <h1 className={"text-6xl text-sky-300 font-bold"}>Introduction</h1>
-            <div className={"w-10/12"}>
+        <div className={"flex flex-col justify-center items-center m-0 mt-4 w-7/12 mx-auto md:text-xl text-[15px] gap-5 md:leading-10 leading-7"}>
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold"}>Introduction</h1>
+            <div className={"md:w-10/12 w-[320px]"}>
                 <p className="mb-4">
                     We like Oppenheimer, but theory in data structures and algorithms will{" "}
                     <span className="font-bold text-sky-400">not</span> just take you so far. Understanding the
@@ -21,7 +21,7 @@ export default function TheorySection() {
                 </p>
             </div>
 
-            <div className={"w-10/12"}>
+            <div className={"md:w-10/12 w-[320px]"}>
                 <p className="mb-4">
                     In computer science, graphs are incredibly versatile structures that represent a set of objects and
                     the
@@ -34,9 +34,9 @@ export default function TheorySection() {
                 </p>
             </div>
 
-            <h1 className={"text-6xl text-sky-300 font-bold"}>Graphs</h1>
-            <div className={"flex flex-col justify-between w-10/12"}>
-                <div className={"w-10/12"}>
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold"}>Graphs</h1>
+            <div className={"flex flex-col justify-between md:w-10/12 w-[320px]"}>
+                <div className={"md:w-10/12 w-[320px]"}>
                     <p className="mb-4">
                         As was mentioned earlier, a <span className={"custom-span-highlight"}>graphs</span> is any
                         collection of{" "}
@@ -51,7 +51,7 @@ export default function TheorySection() {
                     </p>
 
                     <div
-                        className="z-50 w-1/12"
+                        className="z-50 md:w-1/12"
                         onMouseEnter={() => setPopup(true)}
                         onMouseLeave={() => setPopup(false)}
                     >
@@ -89,13 +89,13 @@ export default function TheorySection() {
                     }
                 </div>
 
-                <div className={"flex flex-col max-w-7xl mx-auto px-4 py-8"}>
-                    <GraphTheory/>
+                <div className={"flex justify-center max-w-7xl"}>
+                    <GraphTheory />
                 </div>
             </div>
 
-            <h1 className={"text-6xl text-sky-300 font-bold"}>Graph Terminology</h1>
-            <div className={"flex flex-col justify-between w-10/12"}>
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold text-center"}>Graph Terminology</h1>
+            <div className={"flex flex-col justify-between md:w-10/12 w-[320px]"}>
                 <p className="mb-4">
                     In graphs, edges can be either <span className={"custom-span-highlight"}>directed</span> or <span
                     className={"custom-span-highlight"}>undirected</span>.
@@ -128,12 +128,15 @@ export default function TheorySection() {
 
                 <div>
                     <h1 className={"text-3xl text-sky-300 font-bold self-start mt-4 mb-4"}>Directed graph</h1>
-                    <DirectedGraphTheory/>
+                    <div className={"flex justify-center max-w-7xl"}>
+                        <DirectedGraphTheory/>
+                    </div>
+
                 </div>
             </div>
 
-            <h1 className={"text-6xl text-sky-300 font-bold"}>Connected Component</h1>
-            <div className={"flex flex-col justify-between w-10/12"}>
+            <h1 className={"md:text-6xl text-3xl text-sky-300 font-bold text-center"}>Connected Component</h1>
+            <div className={"flex flex-col justify-between md:w-10/12 w-[320px]"}>
                 <p className="mb-4">
                     Another key concept is the connected component.
                     A connected component in a graph is a <span
@@ -166,12 +169,21 @@ export default function TheorySection() {
                     className={"custom-span-highlight"}>B</span>.
                 </p>
 
-                <div className={"flex flex-row justify-between items-center text-center mt-20"}>
-                    <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
-                          href={"/"}>Home</Link>
-                    <Link className={"hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl"}
-                          href={"/manipulation"}>Traversal</Link>
+                <div className="flex flex-row justify-between items-center text-center mt-20">
+                    <Link
+                        className="hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl flex justify-center items-center"
+                        href="/"
+                    >
+                        Home
+                    </Link>
+                    <Link
+                        className="hover:bg-sky-400 bg-sky-300 text-white font-bold w-36 h-10 rounded-2xl flex justify-center items-center"
+                        href="/manipulation"
+                    >
+                        Manipulation
+                    </Link>
                 </div>
+
             </div>
         </div>
     );
